@@ -15,8 +15,6 @@ public class TasKagitMakas {
         int sec=0;
         int sec2=0;
         
-        System.out.println("lanet olası bir şey ekledim buraya");
-        
         System.out.println("Taş, Kağıt, Makas Oynuna Hoşgeldin");
         System.out.println("******* Kurallar ********\n- Yalnızca 0, 1 ve 2\ntuşlarını tuşlayınız.\n\n- 5 Skor Alan Kazanır");
         System.out.println("****** Hadi Başla *******");
@@ -24,7 +22,6 @@ public class TasKagitMakas {
         while(true){
             
             if (Player == 5 || Computer == 5) {
-                
                 
                 if (Player>Computer) {
                     System.out.println("*************************************");
@@ -37,13 +34,14 @@ public class TasKagitMakas {
                     System.out.println("***************************************");
                     break;
                 }
-                
             }
             
             System.out.println("0-Taş\n1-Kağıt\n2-Makas");
             System.out.print("=== SEÇİMİN ==> ");
             sec=oku.nextInt();
-            while (true) {                
+            
+            while (true) {     
+                
                 if (0<=sec && sec<=2) {
                     break;
                 }
@@ -52,7 +50,6 @@ public class TasKagitMakas {
                     System.out.print("=== SEÇİMİN ==> ");
                     sec=oku.nextInt();
                 }
-                    
             }
             
             System.out.println("Player : "+tkm[sec]);
@@ -65,7 +62,6 @@ public class TasKagitMakas {
                 System.out.println("Skorlar");
                 System.out.println("****************\nPlayer : "+Player+"\nComputer : "+Computer);
                 System.out.println("****************");
-                
             }else if (sec == 2 && sec2 == 1 || sec ==1 && sec2 == 0 || sec == 0 && sec2 == 2) {
                 System.out.println("Player Kazandı\n");
                 Player+=1;
@@ -79,10 +75,6 @@ public class TasKagitMakas {
                 System.out.println("****************\nPlayer : "+Player+"\nComputer : "+Computer);
                 System.out.println("****************");
             }
-            
-            
         }
-        
     }
-    
 }
