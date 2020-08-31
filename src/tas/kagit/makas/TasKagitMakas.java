@@ -15,6 +15,8 @@ public class TasKagitMakas {
         int sec=0;
         int sec2=0;
         
+        System.out.println("lanet olası bir şey ekledim buraya");
+        
         System.out.println("Taş, Kağıt, Makas Oynuna Hoşgeldin");
         System.out.println("******* Kurallar ********\n- Yalnızca 0, 1 ve 2\ntuşlarını tuşlayınız.\n\n- 5 Skor Alan Kazanır");
         System.out.println("****** Hadi Başla *******");
